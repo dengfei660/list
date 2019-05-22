@@ -20,6 +20,7 @@ struct my_node
  *
  * @param node The list head.
  */
+ 
 void list_init(list_type * node);
 
 
@@ -31,6 +32,7 @@ void list_init(list_type * node);
  * @return Non-zero if the list is empty, or zero if it is not empty.
  *
  */
+ 
 int list_empty(const list_type * node);
 
 
@@ -42,6 +44,7 @@ int list_empty(const list_type * node);
  *
  * @return void.
  */
+ 
 void  list_insert_before(list_type *pos, list_type *node);
 
 
@@ -52,6 +55,7 @@ void  list_insert_before(list_type *pos, list_type *node);
  * @param list  The list. 
  * @param node  The element to be inserted.
  */
+ 
 void list_push_back(list_type *list, list_type *node);
 
 
@@ -61,6 +65,7 @@ void list_push_back(list_type *list, list_type *node);
  * @param lst       The target list.
  * @param nodes     Nodes list.
  */
+ 
 void list_insert_nodes_before(list_type *lst,
                                            list_type *nodes);
 
@@ -73,6 +78,7 @@ void list_insert_nodes_before(list_type *lst,
  *
  * @return void.
  */
+ 
 void list_insert_after(list_type *pos, list_type *node);
 
 
@@ -83,6 +89,7 @@ void list_insert_after(list_type *pos, list_type *node);
  * @param list  The list. 
  * @param node  The element to be inserted.
  */
+ 
 void list_push_front(list_type *list, list_type *node);
 
 
@@ -92,6 +99,7 @@ void list_push_front(list_type *list, list_type *node);
  * @param lst       The target list.
  * @param nodes     Nodes list.
  */
+ 
 void list_insert_nodes_after(list_type *lst,
                                           list_type *nodes);
 
@@ -110,6 +118,7 @@ void list_insert_nodes_after(list_type *lst,
  *
  * @return void.
  */
+ 
 void list_merge_first(list_type *list1, list_type *list2);
 
 
@@ -128,6 +137,7 @@ void list_merge_first(list_type *list1, list_type *list2);
  *
  * @return void.
  */
+ 
 void list_merge_last(list_type *list1, list_type *list2);
 
 
@@ -136,6 +146,7 @@ void list_merge_last(list_type *list1, list_type *list2);
  *
  * @param node      The element to be erased.
  */
+ 
 void list_erase(list_type *node);
 
 
@@ -148,6 +159,7 @@ void list_erase(list_type *node);
  * @return The node itself if it is found in the list, or NULL if it is not 
  *         found in the list.
  */
+ 
 list_type* list_find_node(list_type *list, 
                                           list_type *node);
 
@@ -166,6 +178,7 @@ list_type* list_find_node(list_type *list,
  *
  * @return The first node that matched, or NULL if it is not found.
  */
+ 
 list_type* list_search(list_type *list, void *value,
                                        int (*comp)(void *value, 
                                                    const list_type *node)
