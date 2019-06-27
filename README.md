@@ -3,13 +3,17 @@ C实现的List 双向列表
 
 这个List是从pjsip中剥离的双向list，使用C语言实现
 在定义结构体时，请必须把列表声明放在结构体的开始位置，否则会有问题，如：
+
 struct my_node
 {
-    // This must be the first member declared in the struct!
-    DECL_LIST_MEMBER(struct my_node);
-    int value;
-};
 
+    // This must be the first member declared in the struct!
+    
+    DECL_LIST_MEMBER(struct my_node);
+    
+    int value;
+    
+};
 
 主要接口如下：
 /**
